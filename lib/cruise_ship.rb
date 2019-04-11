@@ -1,11 +1,6 @@
-# passengers = {
-# suite_a: "Amanda Presley", 
-# suite_b: "Seymour Hoffman", 
-# suite_c: "Alfred Tennyson", 
-# suite_d: "Charlie Chaplin", 
-# suite_e: "Crumpet the Elf"
-# }
-
-def select_winner(passengers)
-  # add the code snippet here!
+def select_winner(hsh)
+	hsh.each { |n|
+		return n[1] if n[0]==:suite_a && n[1][0]=="A"
+	}
+	"No winner found."
 end
