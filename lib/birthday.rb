@@ -3,7 +3,7 @@
 #   "Sarah" => 6,
 #   "Amanda" => 27
 # }
-
+require pry
 def happy_birthday(birthday_kids)
   # add your code snippet here!
   message =
@@ -13,6 +13,7 @@ def happy_birthday(birthday_kids)
 end
 
 def age_appropriate_birthday(birthday_kids)
+  binding.pry
   greeting =
   birthday_kids.each do |kids_name, age|
 if age <= 12
